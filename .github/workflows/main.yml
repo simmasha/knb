@@ -1,8 +1,6 @@
 name: test
 on: 
   push:
-    branches: 
-      -main
   workflow_dispatch:
 
  
@@ -29,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: py_app
-          path: number.txt
+          path: main.py
