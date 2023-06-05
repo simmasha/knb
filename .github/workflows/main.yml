@@ -22,10 +22,10 @@ jobs:
         
       - name: Build application
         run: |
-            pyinstaller main.py 
+            pyinstaller main.py app.exe
      
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: py_app
-          path: main.py
+          path: main.exe
