@@ -22,12 +22,10 @@ jobs:
         
       - name: Build application
         run: |
-            pyinstaller --onefile main.py
-            mkdir artifacts
-            mv dist/main.exe artifacts/
+            pyinstaller main.py
      
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: py_app
-          path: artifacts/main.exe
+          path: main.exe
