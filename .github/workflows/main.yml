@@ -1,6 +1,8 @@
 name: test
-on: 
+on:
   push:
+    paths:
+      - '*.py'
   workflow_dispatch:
 
  
